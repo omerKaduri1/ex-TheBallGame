@@ -1,13 +1,25 @@
 'use strict'
 
-function onBallClick(elBall) {
-    var ballWidth = 100
-    var ballHeight = 100
+var gBallWidth = 100
+var gBallHeight = 100
 
-    ballWidth += 50
-    ballHeight += 50
+function onBallClick() {
+    const elBall = document.querySelector('.ball')
 
-    elBall.style.width = ballWidth + 'px'
-    elBall.style.height = ballHeight + 'px'
-    elBall.innerText = ballHeight + ''
+    if (gBallHeight < 400) {
+        gBallWidth += 50
+        gBallHeight += 50
+    
+        elBall.style.width = gBallWidth + 'px'
+        elBall.style.height = gBallHeight + 'px'
+        elBall.innerText = gBallHeight + ''
+    }
+    
+    else {
+        elBall.style.width = '100px'
+        elBall.style.height = '100px'
+        elBall.innerText = '100'
+        gBallHeight = 100
+        gBallWidth = 100
+    }
 }
