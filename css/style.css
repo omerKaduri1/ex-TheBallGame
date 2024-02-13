@@ -15,4 +15,5 @@ div {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
+    transition: width, height 1s;
 }
