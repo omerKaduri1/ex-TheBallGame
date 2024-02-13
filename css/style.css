@@ -12,4 +12,7 @@ div {
     border-radius: 50%;
     background-color: darkcyan;
     margin: auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
 }
